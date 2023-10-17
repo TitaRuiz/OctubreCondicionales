@@ -10,7 +10,6 @@ public class Ejercicio6 {
 
 		// 1. Declarar las variables
 		int num, unidades, decenas;
-		String numLetra = "";
 		Scanner consola = new Scanner(System.in);
 
 		// 2. Solicitar el dato por la consola
@@ -26,96 +25,81 @@ public class Ejercicio6 {
 			decenas = num / 10;
 			switch (decenas) {
 			case 0:
-				numLetra = "";
+
 				break;
 			case 1:
-				numLetra = "diez";
+				System.out.println("Diez ");
 				break;
 			case 2:
-				numLetra = "veinte";
+				System.out.println("Veinte ");
 				break;
 			case 3:
-				numLetra = "treinta";
+				System.out.println("Treinta ");
 				break;
 			case 4:
-				numLetra = "cuarenta";
+				System.out.println("Cuarenta");
 				break;
 			case 5:
-				numLetra = "cincuenta";
+				System.out.println("Cincuenta");
 				break;
 			case 6:
-				numLetra = "sesenta";
+				System.out.println("Sesenta");
 				break;
 			case 7:
-				numLetra = "setenta";
+				System.out.println("Setenta ");
 				break;
 			case 8:
-				numLetra = "ochenta";
+				System.out.println("Ochenta");
 				break;
 			case 9:
-				numLetra = "noventa";
+				System.out.println("Noventa ");
 				break;
 			}
 			if (decenas != 0 && unidades != 0) {
-				numLetra += " y ";
+				System.out.println(" y ");
 			}
 			switch (unidades) {
 			case 0:
 				if(decenas==0) {
-					numLetra = "Cero";
+					System.out.println("Cero");;
 				}
 				break;
 			case 1:
-				if (decenas == 1) {
-					numLetra = "once";
-				} else {
-					numLetra += "uno";
-				}
+
+				System.out.println("uno");
+
 				break;
 			case 2:
-				if (decenas == 1) {
-					numLetra = "doce";
-				} else {
-					numLetra += "dos";
-				}
+
+
+				System.out.println("dos");
+
 				break;
 			case 3:
-				if (decenas == 1) {
-					numLetra = "trece";
-				} else {
-					numLetra += "tres";
-				}
+				System.out.println("tres");
 				break;
 			case 4:
-				if (decenas == 1) {
-					numLetra = "catorce";
-				} else {
-					numLetra += "cuatro";
-				}
+				System.out.println("cuatro");
 				break;
 			case 5:
-				if (decenas == 1) {
-					numLetra = "quince";
-				} else {
-					numLetra += "cinco";
-				}
+				System.out.println("Cinco");
 				break;
 			case 6:
-				numLetra += "seis";
+				System.out.println("Seis");
 				break;
 			case 7:
-				numLetra += "siete";
+				System.out.println( "siete");
 				break;
 			case 8:
-				numLetra += "ocho";
+				System.out.println("Ocho");
 				break;
 			case 9:
-				numLetra += "nueve";
+				System.out.println("Nueve");
 				break;
 			}
 		}
 
-		System.out.println("El numero en letra es -> " + numLetra);
+
 		consola.close();
 	}
 
